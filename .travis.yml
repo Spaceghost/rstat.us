@@ -2,9 +2,11 @@ language: ruby
 rvm:
   - 1.9.2
   - 1.9.3
+  - jruby-19mode
+  - rbx19-mode
 services: mongodb
 env:
-  - SECRET_TOKEN=fb2983af6f913598429698388a894f1c502adc42dba959917fd82e6a7595182a5299731e53f3159fb01ff33c4681dd8bb62aea36946a5ae0cb904e4902c7ae43
+  - SECRET_TOKEN=4fae0942674610005a705be78b237c046e062b37270f18dfafbfe31c57a4890d39a856f2c33c4e8f89c11756c7c84403e16d0124db76d92be2c1d570add7b3ab
 script: "bundle exec rake test"
 notifications:
-  irc: "irc.freenode.org#rstatus"
+  irc: "irc.freenode.org#rubyonrails-offtopic"
